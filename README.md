@@ -81,6 +81,8 @@ $ touch src/store/store.js
 $ npm install redux-thunk
 ```
 
+![Folder structure](./gitassets/redux-folder-structure.jpg "Redux folder structure")
+
 Create the reducers (accountReducer.js)
 Combine multiple reducers into the store (index.js)
 Create the store
