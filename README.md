@@ -58,14 +58,14 @@ Every single component will need to pass the state to every other component in t
 Some of the terminologies used in Redux
 * Reducer
 * Action
-* Action Creator
+* Action Creator (creates Action that gets dispatched to Reducer)
 * Action Type
 * Action Payload
 * Dispatch
 * Store
 
 
-<img src="./gitassets/redux-demonstration-example.jpg" alt="PROP Drilling" style="height: 200px;"/>
+<img src="gitassets/redux-demonstration-example.jpg" alt="PROP Drilling" style="height: 200px;"/>
 
 
 ```
@@ -75,7 +75,13 @@ $ mkdir src/store/reducers
 $ cd src/store/reducers
 $ touch accountReducer.js
 $ touch index.js
+$ touch src/store/store.js
+
+// to handle async functions
+$ npm install redux-thunk
 ```
 
 Create the reducers (accountReducer.js)
 Combine multiple reducers into the store (index.js)
+Create the store
+Create the provider
